@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Register Page</title>
+    <link rel="stylesheet" href="registers.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="" class="sign-in-form" method="post">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username/Reference ID" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+          </form>
+
+          <form id="form" action="" class="sign-up-form" method="post">
+            <h2 class="title">Sign up</h2>
+
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+
+            <div class="input-field">
+              <i class="fa fa-id-card"></i>
+              <input type="text" placeholder="Reference ID" disabled />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Sign Up" class="btn solid" />
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here?</h3>
+            <p>Click on the below button to join us</p>
+            <button class="btn" href="signup.html" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+
+          <!-- <img
+                src="{{ url_for('static', filename='log.svg') }}"
+                alt=""
+                class="image"
+              /> -->
+        </div>
+
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us?</h3>
+            <p>Sign in and start exploring in our world!</p>
+
+            <button class="btn" id="sign-in-btn">Sign in</button>
+          </div>
+
+          <!-- <img
+                src="{{ url_for('static', filename='register.svg') }}"
+                alt=""
+                class="image"
+              /> -->
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
