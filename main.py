@@ -76,4 +76,4 @@ def out(cap):
         ret, jpeg = cv2.imencode('.jpg', img)
         #cv2.imshow('Webcam', img)
         
-        return jpeg.tobytes(),[]
+        return jpeg.tobytes(),[False,'n/a']
